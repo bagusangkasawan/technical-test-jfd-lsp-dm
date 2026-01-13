@@ -2,6 +2,8 @@
 
 Sistem manajemen inventaris produk dan user dengan role-based access control. Built with React, Express.js, dan PostgreSQL.
 
+---
+
 ## 🚀 Instalasi
 
 ### Prerequisites
@@ -36,6 +38,8 @@ cd ../frontend
 pnpm install
 # atau npm install jika menggunakan npm
 ```
+
+---
 
 ## 🗄️ Setup Database
 
@@ -102,6 +106,8 @@ Script ini akan:
 ✅ Inisialisasi database selesai! Data berhasil dibuat.
 ```
 
+---
+
 ## ▶️ Menjalankan Project
 
 ### Terminal 1: Backend Server
@@ -139,6 +145,8 @@ Expected output:
 - **Frontend**: http://localhost:5173/
 - **API Documentation**: http://localhost:3000/api-docs
 - **API Base**: http://localhost:3000/api
+
+---
 
 ## ✨ Fitur yang Sudah Selesai
 
@@ -227,10 +235,12 @@ Expected output:
 - 10 produk dengan harga dan stok realistis
 - Atomic transaction dengan rollback support
 
+---
+
 ## 📁 Struktur Project
 
 ```
-Junior Fullstack Developer (LSP Digital Marketing)/
+technical-test-jfd-lsp-dm/
 ├── README.md                    # Project documentation
 ├── backend/                     # Express.js + PostgreSQL
 │   ├── .env                    # Environment variables (local)
@@ -273,6 +283,8 @@ Junior Fullstack Developer (LSP Digital Marketing)/
         └── types/
             └── index.ts        # TypeScript interfaces
 ```
+
+---
 
 ## 📚 API Documentation
 
@@ -350,6 +362,8 @@ pnpm run build
 pnpm run preview
 ```
 
+---
+
 ## 🐛 Troubleshooting
 
 ### Database Connection Error
@@ -385,12 +399,16 @@ lsof -ti:3000 | xargs kill -9
 2. Verify `VITE_API_BASE_URL` di `.env` frontend
 3. Check CORS enabled di backend (default enabled)
 
+---
+
 ## 📝 Notes
 
 - Default port untuk backend: **3000**
 - Default port untuk frontend: **5173**
 - Database: **PostgreSQL** di localhost:5432
 - ORM: **None** (raw SQL queries dengan pg library)
+
+---
 
 ## 📄 License
 
