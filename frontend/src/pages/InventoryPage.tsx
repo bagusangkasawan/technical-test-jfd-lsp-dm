@@ -203,12 +203,7 @@ const InventoryPage: React.FC<Props> = ({ notify }) => {
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-right">
                       <button
                         onClick={() => handleSell(p.id)}
-                        disabled={p.stock <= 0}
-                        className={`px-3 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 flex items-center gap-1 sm:gap-2 ml-auto ${
-                          p.stock > 0
-                            ? 'bg-green-600 hover:bg-green-500 text-white hover:shadow-lg hover:shadow-green-500/50'
-                            : 'bg-slate-700 text-slate-500 cursor-not-allowed'
-                        }`}
+                        className="px-3 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 flex items-center gap-1 sm:gap-2 ml-auto bg-green-600 hover:bg-green-500 text-white hover:shadow-lg hover:shadow-green-500/50"
                       >
                         <ShoppingCart size={14} />
                         <span className="hidden sm:inline">Jual</span>

@@ -298,28 +298,34 @@ Fitur:
 - Contoh request dan response
 - Schema validation
 
-### Health Check
+### Contoh Endpoint
 
 ```bash
-curl http://localhost:3000/
+curl http://localhost:3000/api/products
 ```
 
 Response:
 ```json
-{
-  "message": "API Inventory System Ready",
-  "version": "1.0.0",
-  "documentation": "http://localhost:3000/api-docs",
-  "endpoints": {
-    "products": "GET /api/products",
-    "addProduct": "POST /api/products",
-    "sellProduct": "POST /api/products/:id/sell",
-    "users": "GET /api/users",
-    "roles": "GET /api/users/roles",
-    "changeRole": "PUT /api/users/:id/change-role"
-  }
-}
+[
+  {
+    "id": 1,
+    "name": "Laptop Gaming ASUS",
+    "stock": 10,
+    "price": 15000000,
+    "created_at": "2024-01-13T10:30:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Mouse Logitech Wireless",
+    "stock": 50,
+    "price": 250000,
+    "created_at": "2026-01-14T14:07:58.345Z"
+  },
+  // ... dan seterusnya
+]
 ```
+
+---
 
 ## 🛠️ Development Commands
 
